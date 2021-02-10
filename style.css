@@ -1,97 +1,106 @@
-*{
-margin: 0;
-
-}
-html{
-  height:100%;
-}
-
-body {
-  background-image: url('image/flaco.jpg');
-  height: 100%;
-  background-repeat: no-repeat;
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("image/flaco.jpg");
   background-position: center;
-  background-size: 100% 100%;  
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+#menu{
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+/* Hamburger menu */
+
+.bar {
+  height: 6px;
+  width: 100%;
+  background-color: rgba(231, 230, 212, 0.322);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
 
 }
-ul {
-  margin: 0;
-  padding: 0;
+
+
+.change .bar {
+  background-color:rgba(231, 230, 212, 0.322);
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+  
+}
+
+.change #bar3 {
+  transform: translateY(-5px) rotateZ(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
+}
+.navb li a{
+  color: #fff;
+  text-decoration: none;
+}
+ 
+.navb li a:hover{
+  font-weight: bold;
+}
+.navb li{
   list-style: none;
-}
-h2,
-h3,
-a {
-	color: #34495e;
-}
-    
-.logo {
-	margin: 0;
-	font-size: 1.45em;
-}
-.main-nav {
-	margin-top: 5px;
+  padding: 15px;
 
 }
-.logo a,
-.main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
+.navb{
+  padding: 0;
+  cursor: pointer;
+  margin: 0 ;
+  transition: 0.3s ease;
+  display: none; 
 }
-
-.main-nav a {
-	color: #34495e;
-	font-size: .99em;
-}
-
-.main-nav a:hover {
-	color: #718daa;
+.change{
+  display: block;
+  
 }
 
 
 
-.header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-
-
-
-@media screen and (min-width: 600px) and (max-width: 767px)
-    {
-        
-    }
-
-
-
-
-/*for Desktop */
 @media only screen and (min-width: 768px){
-  .header {
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header,
-	.main-nav {
-		display: flex;
-	
-  }
-  
-	}
-
-
-        
+  body {
+    margin: 0px;
+    padding: 0px;
     }
 
+  .bar{
+    display: none;
+}
 
+
+.navb{
+  margin-top: -5%;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  
+}
+
+
+
+}
