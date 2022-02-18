@@ -1,0 +1,20 @@
+/*body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("image/nikon-d6-lenses.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  */
+
+
+  .camera {
+      background-image: url("image/nikon-d6-lenses.jpg");
+        height: 100vh;
+        background-size:100% 100%;
+        justify-content: center;
+        opacity: 3.0;
+    }
+    
+  
+  
